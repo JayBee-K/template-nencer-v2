@@ -202,6 +202,6 @@ input[type='number'] {
 }
 
 .button-theme.button-theme_light:hover {
-	opacity: .7;
+	opacity: .85;
 	color: var(--bs-white);
 }

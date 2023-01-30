@@ -1,7 +1,7 @@
 .section-bg_decor {
 	background-attachment: fixed;
 	background-size: contain;
-	background-image: url('/assets/images/background-decor.png');
+	background-image: url('../images/background-decor.png');
 	background-repeat: no-repeat;
 }
 
@@ -850,7 +850,7 @@
 	content: '';
 	top: 0;
 	right: 0;
-	background-image: url('/assets/images/counter-line.png');
+	background-image: url('../images/counter-line.png');
 	width: 20%;
 	height: 100%;
 	background-repeat: no-repeat;

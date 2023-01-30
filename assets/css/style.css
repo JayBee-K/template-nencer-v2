@@ -26,6 +26,21 @@
 	line-height: 1.6;
 }
 
+@media screen and (max-width: 991px) {
+	.section-heading {
+		text-align: center !important;
+		margin-bottom: 32px !important;
+	}
+
+	.section-heading .section-heading_title {
+		font-size: 1.8em;
+	}
+
+	.section-heading .section-heading_description {
+		font-size: 1em;
+	}
+}
+
 .header {
 	position: absolute;
 	top: 0;
@@ -450,6 +465,39 @@
 	border-color: var(--primary-color);
 }
 
+@media screen and (max-width: 991px) {
+	.header .header-main {
+		padding: 10px 0 !important;
+	}
+
+	.header .header-grid .header-logo img {
+		height: 40px;
+	}
+
+	.header .header-navigation {
+		display: none;
+	}
+
+	.header .header-language {
+		margin-left: auto;
+	}
+
+	.header .header-language .header-language_button > span {
+		display: none;
+	}
+
+	.header .header-language .header-language_button > img {
+		margin-right: 0;
+	}
+
+	.header .header-account .header-account_button > a{
+		color: var(--bs-white);
+		padding: 5px;
+		font-size: 1.2em;
+	}
+
+}
+
 .footer {
 	background: #f4f5ff;
 	padding-top: 50px;
@@ -560,6 +608,28 @@
 	margin-top: 18px;
 }
 
+@media screen and  (max-width: 1024px) {
+	.section-hero {
+		padding: 95px 0 36px;
+	}
+
+	.section-hero .hero-item .hero-item_content {
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.section-hero .hero-item .hero-item_content .hero-item_content--title {
+		font-size: 2.2em;
+	}
+
+	.section-hero .hero-item .hero-item_image {
+		margin-top: 32px;
+	}
+
+}
+
 .software-card {
 	border-radius: 10px;
 	box-shadow: 2px 2px 8px rgb(0 0 0 / 8%);
@@ -620,7 +690,7 @@
 	-webkit-box-orient: vertical;
 }
 
-.software-card .card-body .card-info .card-button .button-theme {
+.software-card .card-body .card-button .button-theme {
 	font-size: 1em;
 	min-height: 1px;
 	padding: 7px 10px;
@@ -629,10 +699,9 @@
 	border: 1px solid var(--primary-color);
 	color: var(--primary-color);
 	box-shadow: none;
-	border-radius: 6px;
 }
 
-.software-card .card-body .card-info .card-button .button-theme:hover {
+.software-card .card-body .card-button .button-theme:hover {
 	color: var(--bs-white);
 	background: var(--primary-color);
 }
@@ -666,6 +735,35 @@
 
 .software-card .card-body .card-info .card-title:hover {
 	color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+	.software-card .card-header .card-image span {
+		font-size: .8em;
+		padding: 4px 6px;
+	}
+
+	.software-card .card-body {
+		padding: 8px;
+	}
+
+	.software-card .card-body .card-price {
+		font-size: 12px;
+		gap: 5px;
+	}
+
+	.software-card .card-body .card-info .card-title {
+		-webkit-line-clamp: 3;
+	}
+
+	.software-card .card-body .card-button {
+		margin-top: 8px;
+	}
+
+	.software-card .card-body .card-button .button-theme {
+		padding: 5px 10px;
+		font-size: .95em;
+	}
 }
 
 .cloud-card {
@@ -741,6 +839,7 @@
 	color: var(--bs-gray-800);
 	padding-bottom: 1px;
 	border-bottom: 1px solid var(--bs-gray-800);
+	white-space: nowrap;
 }
 
 .cloud-card_one {
@@ -765,6 +864,34 @@
 
 .cloud-card_six {
 	background: #CEF0DE;
+}
+
+@media screen and (max-width: 768px) {
+	.cloud-card .card-body {
+		padding: 15px 15px 60px;
+	}
+
+	.cloud-card .card-body .card-title {
+		font-size: 1.2em;
+	}
+
+	.cloud-card .card-body .card-price .card-price_text {
+		font-size: 1em;
+	}
+
+	.cloud-card .card-body .card-price .card-price_current {
+		font-size: 1em;
+	}
+
+	.cloud-card .card-body .card-price .card-price_current span {
+		font-size: 1.1em;
+	}
+
+	.cloud-card .card-body .card-link {
+		right: unset;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
 
 .article-card {
@@ -888,12 +1015,15 @@
 	text-decoration: none;
 	vertical-align: bottom;
 	max-width: 100%;
-	white-space: nowrap;
 	overflow: hidden;
+	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
 	font-weight: 700;
 	font-size: 1.025em;
-	line-height: 22px;
+	margin-bottom: 2px;
 }
 
 .module-card .card-body .card-title > a:before {
@@ -1006,4 +1136,47 @@
 
 .module-card:hover .card-header .card-header_gradient {
 	opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+	.module-card .card-body {
+		padding: 8px;
+	}
+
+	.module-card .card-body .card-title > a {
+		overflow: hidden;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 3;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		white-space: normal;
+	}
+
+	.module-card .card-body .card-meta {
+		overflow: hidden;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 2;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		white-space: normal;
+	}
+
+	.module-card .card-body .card-grid {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding-top: 10px;
+	}
+
+	.module-card .card-body .card-grid .card-price {
+		flex-direction: row;
+		font-size: 12px;
+		gap: 5px;
+	}
+
+	.module-card .card-body .card-grid .card-price .card-price_old {
+		padding-top: 2px;
+	}
 }

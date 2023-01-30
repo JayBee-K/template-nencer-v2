@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 	<title>Template Nencer</title>
 	<meta name="description" content="Template Nencer">
@@ -18,7 +18,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		  rel="stylesheet">
+	      rel="stylesheet">
 
 	<link rel="icon" href="/assets/images/favicon.png">
 	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
@@ -30,15 +30,15 @@
 	<link rel="stylesheet" href="./assets/css/style.css">
 
 	<style>
-		:root {
-			--primary-color: #0867AD;
-			--primary-hover: #0b3375;
-			--primary-rgb: 8, 103, 173;
+        :root {
+            --primary-color: #0867AD;
+            --primary-hover: #0b3375;
+            --primary-rgb: 8, 103, 173;
 
-			--secondary-color: #ED3439;
-			--secondary-hover: #c62a2e;
-			--secondary-rgb: 237, 52, 57;
-		}
+            --secondary-color: #ED3439;
+            --secondary-hover: #c62a2e;
+            --secondary-rgb: 237, 52, 57;
+        }
 	</style>
 </head>
 <body>
@@ -76,6 +76,14 @@
 					</div>
 				</div>
 				<div class="header-navigation">
+					<div class="header-navigation_logo d-lg-none">
+						<a href="" class="d-inline-flex align-middle">
+							<img src="./assets/images/logo.png" class="img-fluid" alt="">
+						</a>
+						<button type="button" class="close-navigation" id="close-navigation">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
 					<ul class="header-navigation_list">
 						<li class="header-navigation_item">
 							<a href="" class="header-navigation_item--link">
@@ -255,7 +263,6 @@
 					---
 					--- Chưa đăng nhập
 					---
-					-->
 					<div class="header-account_button">
 						<a href="" class="button-theme button-theme_secondary d-lg-inline-flex d-none">
 							Đăng nhập
@@ -264,14 +271,20 @@
 							<i class="fas fa-user-alt"></i>
 						</a>
 					</div>
+					-->
 
 					<!--
 					---
 					--- Đã đăng nhập
 					---
+					-->
 					<div class="header-account_list">
-						<a href="javascript:void(0)" class="button-theme button-theme_secondary">
+						<a href="javascript:void(0)"
+						   class="button-theme button-theme_secondary d-lg-inline-flex d-none">
 							Tài khoản
+						</a>
+						<a href="javascript:void(0)" class="d-block d-lg-none">
+							<i class="fas fa-user-alt"></i>
 						</a>
 						<ul class="list-unstyled mb-0">
 							<li class="header-account_list--header">
@@ -304,7 +317,11 @@
 							</li>
 						</ul>
 					</div>
-					-->
+				</div>
+				<div class="header-hamburger d-block d-lg-none">
+					<div class="hamburger" id="call-navigation">
+						<span></span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -602,7 +619,7 @@
 							<div class="card-header_image">
 								<div class="card-header_image__inner">
 									<img src="./assets/images/module/wonderful.avif"
-										 alt="">
+									     alt="">
 								</div>
 							</div>
 							<a href="" class="card-header_gradient"></a>
@@ -643,7 +660,7 @@
 							<div class="card-header_image">
 								<div class="card-header_image__inner">
 									<img src="./assets/images/module/preview_imgscaled.avif"
-										 alt="">
+									     alt="">
 								</div>
 							</div>
 							<a href="" class="card-header_gradient"></a>
@@ -684,7 +701,7 @@
 							<div class="card-header_image">
 								<div class="card-header_image__inner">
 									<img src="./assets/images/module/preview.jpg"
-										 alt="">
+									     alt="">
 								</div>
 							</div>
 							<a href="" class="card-header_gradient"></a>
@@ -724,7 +741,7 @@
 							<div class="card-header_image">
 								<div class="card-header_image__inner">
 									<img src="./assets/images/module/Inline_Preview.jpg"
-										 alt="">
+									     alt="">
 								</div>
 							</div>
 							<a href="" class="card-header_gradient"></a>
@@ -764,7 +781,7 @@
 							<div class="card-header_image">
 								<div class="card-header_image__inner">
 									<img src="./assets/images/module/wonderful.avif"
-										 alt="">
+									     alt="">
 								</div>
 							</div>
 							<a href="" class="card-header_gradient"></a>
@@ -805,7 +822,7 @@
 							<div class="card-header_image">
 								<div class="card-header_image__inner">
 									<img src="./assets/images/module/preview_imgscaled.avif"
-										 alt="">
+									     alt="">
 								</div>
 							</div>
 							<a href="" class="card-header_gradient"></a>
@@ -846,7 +863,7 @@
 							<div class="card-header_image">
 								<div class="card-header_image__inner">
 									<img src="./assets/images/module/preview.jpg"
-										 alt="">
+									     alt="">
 								</div>
 							</div>
 							<a href="" class="card-header_gradient"></a>
@@ -886,7 +903,7 @@
 							<div class="card-header_image">
 								<div class="card-header_image__inner">
 									<img src="./assets/images/module/Inline_Preview.jpg"
-										 alt="">
+									     alt="">
 								</div>
 							</div>
 							<a href="" class="card-header_gradient"></a>
@@ -1612,7 +1629,7 @@
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
-		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>

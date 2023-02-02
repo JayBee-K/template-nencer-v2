@@ -19,6 +19,12 @@
 	line-height: 1.2;
 }
 
+.section-heading .section-heading_sub {
+	font-size: 1.5em;
+	color: var(--bs-gray-900);
+	font-weight: 700;
+}
+
 .section-heading .section-heading_description {
 	font-size: 1.075em;
 	letter-spacing: 0.5px;
@@ -432,27 +438,37 @@
 	box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
 }
 
-.header.is-sticky .header-main {
+.header.is-page {
+	background-color: var(--bs-white);
+	box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+}
+
+.header.is-sticky .header-main,
+.header.is-page .header-main {
 	padding: 6px 40px;
 }
 
-.header.is-sticky .header-grid .header-logo .header-logo_is--noSticky {
+.header.is-sticky .header-grid .header-logo .header-logo_is--noSticky,
+.header.is-page .header-grid .header-logo .header-logo_is--noSticky {
 	opacity: 0;
 	visibility: hidden;
 }
 
-.header.is-sticky .header-grid .header-logo .header-logo_is--sticky {
+.header.is-sticky .header-grid .header-logo .header-logo_is--sticky,
+.header.is-page .header-grid .header-logo .header-logo_is--sticky {
 	opacity: 1;
 	visibility: visible;
 }
 
-
 .header.is-sticky .header-language .header-language_button,
-.header.is-sticky .header-navigation .header-navigation_list .header-navigation_item .header-navigation_item--link {
+.header.is-sticky .header-navigation .header-navigation_list .header-navigation_item .header-navigation_item--link,
+.header.is-page .header-language .header-language_button,
+.header.is-page .header-navigation .header-navigation_list .header-navigation_item .header-navigation_item--link {
 	color: var(--bs-gray-900);
 }
 
-.header.is-sticky .header-account .header-account_list .button-theme {
+.header.is-sticky .header-account .header-account_list .button-theme,
+.header.is-page .header-account .header-account_list .button-theme {
 	background-color: var(--primary-color);
 	color: var(--bs-white);
 	border-color: var(--primary-color);
@@ -715,11 +731,13 @@
 		margin-top: -11.5px;
 	}
 
-	.header.is-sticky .header-account .header-account_button > a, .header.is-sticky .header-account .header-account_list > a {
+	.header.is-sticky .header-account .header-account_button > a, .header.is-sticky .header-account .header-account_list > a,
+	.header.is-page .header-account .header-account_button > a, .header.is-page .header-account .header-account_list > a {
 		color: var(--primary-color);
 	}
 
-	.header.is-sticky .header-hamburger .hamburger:before, .header.is-sticky .header-hamburger .hamburger:after, .header.is-sticky .header-hamburger .hamburger > span {
+	.header.is-sticky .header-hamburger .hamburger:before, .header.is-sticky .header-hamburger .hamburger:after, .header.is-sticky .header-hamburger .hamburger > span,
+	.header.is-page .header-hamburger .hamburger:before, .header.is-page .header-hamburger .hamburger:after, .header.is-page .header-hamburger .hamburger > span {
 		background: var(--primary-color);
 	}
 
@@ -1542,7 +1560,7 @@
 }
 
 .section-breadcrumb .breadcrumb-title {
-	font-size: 2.4em;
+	font-size: 2em;
 	font-weight: 700;
 	color: var(--bs-gray-900);
 	line-height: 1.2;
@@ -1567,4 +1585,54 @@
 
 .section-breadcrumb .breadcrumb-list .breadcrumb .breadcrumb-item {
 	color: var(--bs-gray-600);
+}
+
+.package-inner .section-heading .section-heading_title {
+	color: var(--primary-color);
+	margin-bottom: 0;
+}
+
+.cloud-inner_card {
+	height: 100%;
+}
+
+.cloud-inner_card .card-body {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.cloud-inner_card .card-body .card-icon {
+	font-size: 36px;
+	margin-bottom: 8px;
+}
+
+.cloud-inner_card .card-body .card-icon.color-aqua {
+	color: #41B7B7;
+}
+
+.cloud-inner_card .card-body .card-icon.color-primary {
+	color: var(--primary-color);
+}
+
+.cloud-inner_card .card-body .card-icon.color-secondary {
+	color: var(--secondary-color);
+}
+
+.cloud-inner_card .card-body .card-icon.color-green {
+	color: #00A859;
+}
+
+.cloud-inner_card .card-body .card-title {
+	font-size: 1.4em;
+	color: var(--bs-gray-900);
+	font-weight: 700;
+}
+
+.cloud-inner_card .card-body .card-description {
+	font-size: 1.05em;
+	letter-spacing: 0.5px;
+	color: var(--bs-gray-600);
+	line-height: 1.6;
 }

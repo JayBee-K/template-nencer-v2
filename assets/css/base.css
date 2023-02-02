@@ -217,10 +217,19 @@ input[type='number'] {
 	padding: 64px 0;
 }
 
+.section-gap_small {
+	padding: 48px 0;
+}
+
 @media screen and (max-width: 991px) {
 	.section-gap {
 		padding: 32px 0;
 	}
+
+	.section-gap_small {
+		padding: 24px 0;
+	}
+
 }
 
 .ratio > img {

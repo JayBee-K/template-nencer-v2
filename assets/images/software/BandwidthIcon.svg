@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="73px" height="72px" viewBox="0 0 73 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>C792A02B-1DF3-405E-B53E-60EE2EF3A091</title>
+    <g id="Shared-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HG-Concepts---Shared-Page-XL" transform="translate(-649.000000, -1370.000000)">
+            <g id="BandwidthIcon" transform="translate(649.000000, 1370.000000)">
+                <path d="M36.4,72 C45.0605902,72 53.0068956,68.9417832 59.2179134,63.8463526 C67.2656253,57.2441241 72.4,47.2216608 72.4,36 L0.4,36 C0.4,55.882251 16.517749,72 36.4,72 Z" id="Oval" fill="#3C97FF"></path>
+                <circle id="Oval" stroke="#1F2044" stroke-width="7" transform="translate(36.400000, 32.400000) rotate(-360.000000) translate(-36.400000, -32.400000) " cx="36.4" cy="32.4" r="28.9"></circle>
+                <rect id="Rectangle" fill="#1F2044" transform="translate(43.500000, 18.000000) rotate(26.000000) translate(-43.500000, -18.000000) " x="40" y="10.8" width="7" height="14.4"></rect>
+                <circle id="Oval" stroke="#1F2044" stroke-width="7" transform="translate(36.400000, 32.400000) rotate(-360.000000) translate(-36.400000, -32.400000) " cx="36.4" cy="32.4" r="7.3"></circle>
+                <rect id="Rectangle" fill="#1F2044" x="8.5" y="29" width="21.6" height="7"></rect>
+                <rect id="Rectangle-Copy-15" fill="#1F2044" x="43.6" y="29" width="21.6" height="7"></rect>
+                <rect id="Rectangle" fill="#1F2044" x="33.7" y="5.4" width="7" height="6.3"></rect>
+                <rect id="Rectangle-Copy-16" fill="#1F2044" transform="translate(18.509010, 15.509010) rotate(-45.000000) translate(-18.509010, -15.509010) " x="15.0090097" y="12.3590097" width="7" height="6.3"></rect>
+                <rect id="Rectangle-Copy-17" fill="#1F2044" transform="translate(55.200000, 16.200000) scale(-1, 1) rotate(-45.000000) translate(-55.200000, -16.200000) " x="51.7" y="12.6" width="7" height="7.2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

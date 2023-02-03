@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="171px" height="225px" viewBox="0 0 171 225" style="enable-background:new 0 0 171 225;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{clip-path:url(#SVGID_4_);fill:#0867AD;}
+	.st2{clip-path:url(#SVGID_6_);fill:#0867AD;}
+</style>
+<g id="DV_Lock_1_">
+	<g>
+		<g>
+			<g>
+				<defs>
+					<rect id="SVGID_1_" width="171" height="225"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				<g class="st0">
+					<g>
+						<g>
+							<defs>
+								<rect id="SVGID_3_" width="171" height="225"/>
+							</defs>
+							<clipPath id="SVGID_4_">
+								<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+							</clipPath>
+							<path class="st1" d="M166.2,80.2h-13.6V63.9c0-7-1.2-14.1-3.9-20.5C137.3,16.3,113.2,0.4,86.6,0C55.4,0,37.4,20.4,37.4,20.4
+								c-12.3,12.6-19,29.2-19,46.9v13H4.9c-2.7,0-4.9,2.2-4.9,4.8v135.1c0,2.7,2.2,4.9,4.9,4.9h161.3c2.7,0,4.8-2.2,4.8-4.9V85.1
+								C171,82.4,168.9,80.2,166.2,80.2 M38,67.2c0-12.7,5-24.7,14-33.7c8.8-8.8,20.4-13.7,32.7-14c0.2,0,0.5,0,0.7,0h0.1
+								c12.7,0,24.6,4.9,33.6,13.9S133,54.3,133,67.1v13H38V67.2z M78.2,172.1c-1.9,5.4-4.5,9.8-8,13.2c-2.6,2.5-6.1,4.5-10.6,5.9
+								c-3.3,1.1-7.8,1.6-13.3,1.6H18v-74.5h27.5c6.2,0,10.9,0.5,14.2,1.4c4.4,1.3,8.1,3.6,11.2,6.9s5.5,7.3,7.1,12.1
+								s2.4,10.6,2.4,17.6C80.5,162.3,79.7,167.6,78.2,172.1 M128.3,192.7h-16.1l-26.6-74.5h16.3l18.8,55.1l18.2-55.1h16
+								L128.3,192.7z"/>
+						</g>
+					</g>
+					<g>
+						<g>
+							<defs>
+								<rect id="SVGID_5_" width="171" height="225"/>
+							</defs>
+							<clipPath id="SVGID_6_">
+								<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+							</clipPath>
+							<path class="st2" d="M59.1,135.1c-1.8-1.7-4.1-2.9-7-3.5c-2.1-0.5-6.2-0.7-12.3-0.7H33v49.3h11.2c4.2,0,7.2-0.2,9.1-0.7
+								c2.4-0.6,4.5-1.6,6.1-3.1s2.9-3.9,3.9-7.2s1.5-7.9,1.5-13.6c0-5.8-0.5-10.2-1.5-13.3C62.4,139.2,60.9,136.8,59.1,135.1"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

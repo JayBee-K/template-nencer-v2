@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Template Nencer</title>
+	<meta name="description" content="Template Nencer">
+	<meta name="author" content="">
+
+	<meta property="og:title" content="Template Nencer">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Nencer">
+	<meta property="og:image" content="">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		  rel="stylesheet">
+
+	<link rel="icon" href="/assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<style>
+		:root {
+			--primary-color: #0867AD;
+			--primary-hover: #0b3375;
+			--primary-rgb: 8, 103, 173;
+
+			--secondary-color: #ED3439;
+			--secondary-hover: #c62a2e;
+			--secondary-rgb: 237, 52, 57;
+		}
+	</style>
+</head>
+<body>
+
+<div id="header" class="header is-page is-sticky">
+	<div class="header-main">
+		<div class="container-fluid">
+			<div class="header-grid">
+				<div class="header-logo">
+					<a href="" class="d-inline-block align-middle">
+						<img src="./assets/images/netpay-white.png" class="img-fluid header-logo_is--noSticky" alt="">
+						<img src="./assets/images/logo.png" class="img-fluid header-logo_is--sticky" alt="">
+					</a>
+				</div>
+				<div class="header-language">
+					<a href="javascript:void(0)" class="header-language_button">
+						<img src="./assets/images/language/vn.webp" class="img-fluid" alt="">
+						<span>
+							Tiếng Việt
+						</span>
+					</a>
+					<div class="header-language_list">
+						<a href="javascript:void(0)" class="header-language_list--item">
+							<img src="./assets/images/language/vn.webp" class="img-fluid" alt="">
+							Tiếng Việt
+						</a>
+						<a href="javascript:void(0)" class="header-language_list--item">
+							<img src="./assets/images/language/en.webp" class="img-fluid" alt="">
+							English
+						</a>
+						<a href="javascript:void(0)" class="header-language_list--item">
+							<img src="./assets/images/language/cn.webp" class="img-fluid" alt="">
+							中国
+						</a>
+					</div>
+				</div>
+				<div class="header-navigation">
+					<div class="header-navigation_logo d-lg-none">
+						<a href="" class="d-inline-flex align-middle">
+							<img src="./assets/images/logo.png" class="img-fluid" alt="">
+						</a>
+						<button type="button" class="close-navigation" id="close-navigation">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+					<ul class="header-navigation_list">
+						<li class="header-navigation_item">
+							<a href="" class="header-navigation_item--link">
+								Trang chủ
+							</a>
+						</li>
+						<li class="header-navigation_item">
+							<a href="" class="header-navigation_item--link">
+								Phần Mềm
+								<i class="fal fa-angle-down header-navigation_item--icon"></i>
+							</a>
+							<ul class="header-navigation_sub--list">
+								<li class="header-navigation_sub--item">
+									<a href="" class="header-navigation_sub--item---link">
+										<i class="fas fa-cloud"></i>
+										<div class="header-navigation_sub--item---content">
+											<div class="header-navigation_sub--item---content_title">
+												Phần mềm
+											</div>
+											<div class="header-navigation_sub--item---content_description">
+												Cung cấp phần mềm lớn và trung bình
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="header-navigation_sub--item">
+									<a href="" class="header-navigation_sub--item---link">
+										<i class="fas fa-cloud"></i>
+										<div class="header-navigation_sub--item---content">
+											<div class="header-navigation_sub--item---content_title">
+												Phần mềm
+											</div>
+											<div class="header-navigation_sub--item---content_description">
+												Cung cấp phần mềm lớn và trung bình
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="header-navigation_sub--item">
+									<a href="" class="header-navigation_sub--item---link">
+										<i class="fas fa-cloud"></i>
+										<div class="header-navigation_sub--item---content">
+											<div class="header-navigation_sub--item---content_title">
+												Phần mềm
+											</div>
+											<div class="header-navigation_sub--item---content_description">
+												Cung cấp phần mềm lớn và trung bình
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="header-navigation_sub--item">
+									<a href="" class="header-navigation_sub--item---link">
+										<i class="fas fa-cloud"></i>
+										<div class="header-navigation_sub--item---content">
+											<div class="header-navigation_sub--item---content_title">
+												Phần mềm
+											</div>
+											<div class="header-navigation_sub--item---content_description">
+												Cung cấp phần mềm lớn và trung bình
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="header-navigation_sub--item">
+									<a href="" class="header-navigation_sub--item---link">
+										<i class="fas fa-cloud"></i>
+										<div class="header-navigation_sub--item---content">
+											<div class="header-navigation_sub--item---content_title">
+												Phần mềm
+											</div>
+											<div class="header-navigation_sub--item---content_description">
+												Cung cấp phần mềm lớn và trung bình
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="header-navigation_item">
+							<a href="" class="header-navigation_item--link">
+								Module
+								<i class="fal fa-angle-down header-navigation_item--icon"></i>
+							</a>
+							<ul class="header-navigation_sub--list">
+								<li class="header-navigation_sub--item">
+									<a href="" class="header-navigation_sub--item---link">
+										<i class="fas fa-cloud"></i>
+										<div class="header-navigation_sub--item---content">
+											<div class="header-navigation_sub--item---content_title">
+												Module
+											</div>
+											<div class="header-navigation_sub--item---content_description">
+												Cung cấp Module lớn và trung bình
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="header-navigation_sub--item">
+									<a href="" class="header-navigation_sub--item---link">
+										<i class="fas fa-cloud"></i>
+										<div class="header-navigation_sub--item---content">
+											<div class="header-navigation_sub--item---content_title">
+												Module
+											</div>
+											<div class="header-navigation_sub--item---content_description">
+												Cung cấp Module lớn và trung bình
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="header-navigation_sub--item">
+									<a href="" class="header-navigation_sub--item---link">
+										<i class="fas fa-cloud"></i>
+										<div class="header-navigation_sub--item---content">
+											<div class="header-navigation_sub--item---content_title">
+												Module
+											</div>
+											<div class="header-navigation_sub--item---content_description">
+												Cung cấp Module lớn và trung bình
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="header-navigation_sub--item">
+									<a href="" class="header-navigation_sub--item---link">
+										<i class="fas fa-cloud"></i>
+										<div class="header-navigation_sub--item---content">
+											<div class="header-navigation_sub--item---content_title">
+												Module
+											</div>
+											<div class="header-navigation_sub--item---content_description">
+												Cung cấp Module lớn và trung bình
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="header-navigation_sub--item">
+									<a href="" class="header-navigation_sub--item---link">
+										<i class="fas fa-cloud"></i>
+										<div class="header-navigation_sub--item---content">
+											<div class="header-navigation_sub--item---content_title">
+												Module
+											</div>
+											<div class="header-navigation_sub--item---content_description">
+												Cung cấp Module lớn và trung bình
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="header-navigation_item">
+							<a href="" class="header-navigation_item--link">
+								Code
+							</a>
+						</li>
+						<li class="header-navigation_item">
+							<a href="" class="header-navigation_item--link">
+								Theo yêu cầu
+							</a>
+						</li>
+						<li class="header-navigation_item">
+							<a href="" class="header-navigation_item--link">
+								Blog
+							</a>
+						</li>
+						<li class="header-navigation_item">
+							<a href="" class="header-navigation_item--link">
+								Liên hệ
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header-account">
+					<!--
+					---
+					--- Chưa đăng nhập
+					---
+					<div class="header-account_button">
+						<a href="" class="button-theme button-theme_secondary d-lg-inline-flex d-none">
+							Đăng nhập
+						</a>
+						<a href="" class="d-block d-lg-none">
+							<i class="fas fa-user-alt"></i>
+						</a>
+					</div>
+					-->
+
+					<!--
+					---
+					--- Đã đăng nhập
+					---
+					-->
+					<div class="header-account_list">
+						<a href="javascript:void(0)"
+						   class="button-theme button-theme_secondary d-lg-inline-flex d-none">
+							Tài khoản
+						</a>
+						<a href="javascript:void(0)" class="d-block d-lg-none">
+							<i class="fas fa-user-alt"></i>
+						</a>
+						<ul class="list-unstyled mb-0">
+							<li class="header-account_list--header">
+								Xin chào,
+								<br>
+								<b>Nguyễn Văn A</b>
+							</li>
+							<li class="header-account_list--item">
+								<a href="">
+									<i class="fas fa-user"></i>
+									Thông tin tài khoản
+								</a>
+							</li>
+							<li class="header-account_list--item">
+								<a href="">
+									<i class="fas fa-clipboard-list"></i>
+									Lịch sử mua hàng
+								</a>
+							</li>
+							<li class="header-account_list--item">
+								<a href="">
+									<i class="fas fa-lock-alt"></i>
+									Đổi mật khẩu
+								</a>
+							</li>
+							<li class="header-account_list--bottom">
+								<a href="">
+									Đăng xuất
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-hamburger d-block d-lg-none">
+					<div class="hamburger" id="call-navigation">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-overlay" id="header-overlay"></div>
+</div>
+
+<div id="main" class="main page-main">
+	<div class="section-breadcrumb">
+		<div class="container">
+			<h1 class="breadcrumb-title">
+				Tên danh mục module
+			</h1>
+			<div class="breadcrumb-list">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#"><i class="fas fa-home-alt"></i>&nbsp;Trang chủ</a></li>
+					<li class="breadcrumb-item active">Tên danh mục module</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="section-gap_small">
+		<div class="container"><div class="row g-3">
+			<div class="col-6 col-lg-3">
+				<div class="module-card card">
+					<div class="card-header">
+						<div class="card-header_image">
+							<div class="card-header_image__inner">
+								<img src="./assets/images/module/wonderful.avif" alt="">
+							</div>
+						</div>
+						<a href="" class="card-header_gradient"></a>
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							<a href="">
+								Wonderful - The Ultimate Welcome Page Themes For WoWonder
+							</a>
+						</div>
+						<div class="card-meta">
+							<i>by</i>
+							<a href="">
+								DoughouzDark
+							</a>
+							in
+							<a href="">
+								Miscellaneous
+							</a>
+						</div>
+						<div class="card-grid">
+							<div class="card-price">
+								<div class="card-price_current">5.000.000₫</div>
+								<div class="card-price_old">7.000.000₫</div>
+							</div>
+							<div class="card-button">
+								<a href="" class="button-theme button-theme_primary button-small">
+									Chi tiết
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-3">
+				<div class="module-card card">
+					<div class="card-header">
+						<div class="card-header_image">
+							<div class="card-header_image__inner">
+								<img src="./assets/images/module/preview_imgscaled.avif" alt="">
+							</div>
+						</div>
+						<a href="" class="card-header_gradient"></a>
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							<a href="">
+								Wonderful - The Ultimate Welcome Page Themes For WoWonder
+							</a>
+						</div>
+						<div class="card-meta">
+							<i>by</i>
+							<a href="">
+								DoughouzDark
+							</a>
+							in
+							<a href="">
+								Miscellaneous
+							</a>
+						</div>
+						<div class="card-grid">
+							<div class="card-price">
+								<div class="card-price_current">5.000.000₫</div>
+								<div class="card-price_old">7.000.000₫</div>
+							</div>
+							<div class="card-button">
+								<a href="" class="button-theme button-theme_primary button-small">
+									Chi tiết
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-3">
+				<div class="module-card card">
+					<div class="card-header">
+						<div class="card-header_image">
+							<div class="card-header_image__inner">
+								<img src="./assets/images/module/preview.jpg" alt="">
+							</div>
+						</div>
+						<a href="" class="card-header_gradient"></a>
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							<a href="">
+								Wonderful - The Ultimate Welcome Page Themes For WoWonder
+							</a>
+						</div>
+						<div class="card-meta">
+							<i>by</i>
+							<a href="">
+								DoughouzDark
+							</a>
+							in
+							<a href="">
+								Miscellaneous
+							</a>
+						</div>
+						<div class="card-grid">
+							<div class="card-price">
+								<div class="card-price_current">5.000.000₫</div>
+							</div>
+							<div class="card-button">
+								<a href="" class="button-theme button-theme_primary button-small">
+									Chi tiết
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-3">
+				<div class="module-card card">
+					<div class="card-header">
+						<div class="card-header_image">
+							<div class="card-header_image__inner">
+								<img src="./assets/images/module/Inline_Preview.jpg" alt="">
+							</div>
+						</div>
+						<a href="" class="card-header_gradient"></a>
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							<a href="">
+								Wonderful - The Ultimate Welcome Page Themes For WoWonder
+							</a>
+						</div>
+						<div class="card-meta">
+							<i>by</i>
+							<a href="">
+								DoughouzDark
+							</a>
+							in
+							<a href="">
+								Miscellaneous
+							</a>
+						</div>
+						<div class="card-grid">
+							<div class="card-price">
+								<div class="card-price_current">5.000.000₫</div>
+							</div>
+							<div class="card-button">
+								<a href="" class="button-theme button-theme_primary button-small">
+									Chi tiết
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-3">
+				<div class="module-card card">
+					<div class="card-header">
+						<div class="card-header_image">
+							<div class="card-header_image__inner">
+								<img src="./assets/images/module/wonderful.avif" alt="">
+							</div>
+						</div>
+						<a href="" class="card-header_gradient"></a>
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							<a href="">
+								Wonderful - The Ultimate Welcome Page Themes For WoWonder
+							</a>
+						</div>
+						<div class="card-meta">
+							<i>by</i>
+							<a href="">
+								DoughouzDark
+							</a>
+							in
+							<a href="">
+								Miscellaneous
+							</a>
+						</div>
+						<div class="card-grid">
+							<div class="card-price">
+								<div class="card-price_current">5.000.000₫</div>
+								<div class="card-price_old">7.000.000₫</div>
+							</div>
+							<div class="card-button">
+								<a href="" class="button-theme button-theme_primary button-small">
+									Chi tiết
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-3">
+				<div class="module-card card">
+					<div class="card-header">
+						<div class="card-header_image">
+							<div class="card-header_image__inner">
+								<img src="./assets/images/module/preview_imgscaled.avif" alt="">
+							</div>
+						</div>
+						<a href="" class="card-header_gradient"></a>
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							<a href="">
+								Wonderful - The Ultimate Welcome Page Themes For WoWonder
+							</a>
+						</div>
+						<div class="card-meta">
+							<i>by</i>
+							<a href="">
+								DoughouzDark
+							</a>
+							in
+							<a href="">
+								Miscellaneous
+							</a>
+						</div>
+						<div class="card-grid">
+							<div class="card-price">
+								<div class="card-price_current">5.000.000₫</div>
+								<div class="card-price_old">7.000.000₫</div>
+							</div>
+							<div class="card-button">
+								<a href="" class="button-theme button-theme_primary button-small">
+									Chi tiết
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-3">
+				<div class="module-card card">
+					<div class="card-header">
+						<div class="card-header_image">
+							<div class="card-header_image__inner">
+								<img src="./assets/images/module/preview.jpg" alt="">
+							</div>
+						</div>
+						<a href="" class="card-header_gradient"></a>
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							<a href="">
+								Wonderful - The Ultimate Welcome Page Themes For WoWonder
+							</a>
+						</div>
+						<div class="card-meta">
+							<i>by</i>
+							<a href="">
+								DoughouzDark
+							</a>
+							in
+							<a href="">
+								Miscellaneous
+							</a>
+						</div>
+						<div class="card-grid">
+							<div class="card-price">
+								<div class="card-price_current">5.000.000₫</div>
+							</div>
+							<div class="card-button">
+								<a href="" class="button-theme button-theme_primary button-small">
+									Chi tiết
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-3">
+				<div class="module-card card">
+					<div class="card-header">
+						<div class="card-header_image">
+							<div class="card-header_image__inner">
+								<img src="./assets/images/module/Inline_Preview.jpg" alt="">
+							</div>
+						</div>
+						<a href="" class="card-header_gradient"></a>
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							<a href="">
+								Wonderful - The Ultimate Welcome Page Themes For WoWonder
+							</a>
+						</div>
+						<div class="card-meta">
+							<i>by</i>
+							<a href="">
+								DoughouzDark
+							</a>
+							in
+							<a href="">
+								Miscellaneous
+							</a>
+						</div>
+						<div class="card-grid">
+							<div class="card-price">
+								<div class="card-price_current">5.000.000₫</div>
+							</div>
+							<div class="card-button">
+								<a href="" class="button-theme button-theme_primary button-small">
+									Chi tiết
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="section-pagination section-gap_small pb-0">
+			<div class="container">
+				<ul class="pagination">
+					<li class="page-item"><a class="page-link" href="#"><i class="fal fa-angle-left"></i></a></li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item active"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#"><i class="fal fa-angle-right"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" class="footer">
+	<div class="container">
+		<div class="footer-top">
+			<div class="row">
+				<div class="col-xl-4">
+					<div class="footer-item">
+						<div class="footer-logo">
+							<a href="/" class="d-inline-block align-middle">
+								<img src="./assets/images/logo.png" class="img-fluid" alt="">
+							</a>
+						</div>
+						<div class="footer-text">
+							<p>
+								Chúng tôi là nhà cung cấp dịch vụ web hosting với sứ mệnh mang thành công trên mạng đến
+								mọi người.
+							</p>
+							<p>
+								Chúng tôi làm điều đó bằng cách không ngừng cải tiến công nghệ máy chủ, cung cấp hỗ trợ
+								chuyên nghiệp và trải nghiệm dịch vụ liền mạch.
+							</p>
+						</div>
+						<ul class="footer-list list-unstyled mb-0">
+							<li class="footer-list_item">
+								<a href="" class="footer-list_item--link">
+									<i class="fas fa-map-marker-alt"></i>Số 152 Trần Vỹ, Mai Dịch, Cầu Giấy, Hà Nội
+								</a>
+							</li>
+							<li class="footer-list_item">
+								<a href="" class="footer-list_item--link">
+									<i class="fas fa-phone-rotary"></i>(+84) 024 62 757 222 (Từ Thứ 2 đến Chủ Nhật)
+								</a>
+							</li>
+							<li class="footer-list_item">
+								<a href="" class="footer-list_item--link">
+									<i class="fas fa-phone-alt"></i>0943793984 (Zalo)
+								</a>
+							</li>
+							<li class="footer-list_item">
+								<a href="" class="footer-list_item--link">
+									<i class="fas fa-envelope"></i>support@nencer.com
+								</a>
+							</li>
+						</ul>
+						<ul class="footer-social list-unstyled mb-0 d-flex align-items-center justify-content-start">
+							<li class="footer-social_item">
+								<a href="fb.com/admin" class="footer-social_item--link">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li class="footer-social_item">
+								<a href="fb.com/admin" class="footer-social_item--link">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li class="footer-social_item">
+								<a href="fb.com/admin" class="footer-social_item--link">
+									<i class="fab fa-google"></i>
+								</a>
+							</li>
+							<li class="footer-social_item">
+								<a href="https://www.youtube.com/watch?v=neCmEbI2VWg" class="footer-social_item--link">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-8">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-item">
+								<div class="footer-title">
+									HOSTING
+								</div>
+								<ul class="footer-list list-unstyled mb-0">
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Web Hosting
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Thuê VPS Giá Rẻ Tốt Nhất
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Minecraft Server
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											CyberPanel VPS Hosting
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Web Hosting
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Thuê VPS Giá Rẻ Tốt Nhất
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Minecraft Server
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											CyberPanel VPS Hosting
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Web Hosting
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Thuê VPS Giá Rẻ Tốt Nhất
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Minecraft Server
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											CyberPanel VPS Hosting
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-item">
+								<div class="footer-title">
+									TÊN MIỀN
+								</div>
+								<ul class="footer-list list-unstyled mb-0">
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Web Hosting
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Thuê VPS Giá Rẻ Tốt Nhất
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Minecraft Server
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											CyberPanel VPS Hosting
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Web Hosting
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Thuê VPS Giá Rẻ Tốt Nhất
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Minecraft Server
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											CyberPanel VPS Hosting
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-item">
+								<div class="footer-title">
+									THÔNG TIN
+								</div>
+								<ul class="footer-list list-unstyled mb-0">
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Chuyển Website
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Thuê VPS Giá Rẻ Tốt Nhất
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Minecraft Server
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											CyberPanel VPS Hosting
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Web Hosting
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Thuê VPS Giá Rẻ Tốt Nhất
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-item">
+								<div class="footer-title">
+									HỢP PHÁP
+								</div>
+								<ul class="footer-list list-unstyled mb-0">
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Chính Sách Bảo Mật
+										</a>
+									</li>
+									<li class="footer-list_item">
+										<a href="" class="footer-list_item--link">
+											Điều Khoản Dịch Vụ
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="text-lg-start text-center">
+						© 2010-2023 Nencer JSC - Thiết kế website thông minh, ứng dụng di động
+					</div>
+				</div>
+				<div class="col-lg-5 mt-2 mt-lg-0">
+					<div class="text-lg-end text-center">
+						Giá được liệt kê chưa VAT
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>

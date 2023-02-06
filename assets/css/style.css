@@ -2571,7 +2571,7 @@
 .sidebar .sidebar-item .sidebar-article .article-card .card-header {
     width: 110px;
     flex-shrink: 0;
-    border-radius: 6px;
+    border-radius: 0;
 }
 
 .sidebar .sidebar-item .sidebar-article .article-card .card-header > .ratio {
@@ -2817,13 +2817,13 @@
 }
 
 .article-card {
-    border-radius: 5px;
     overflow: hidden;
+	border-radius: 0;
     height: 100%;
 }
 
 .article-card .card-header {
-    border-radius: 5px 5px 8px 8px;
+	border-radius: 0;
     overflow: hidden;
 }
 
@@ -2904,4 +2904,11 @@
         font-size: .95em;
     }
 
+}
+
+@media screen and (min-width: 992px) {
+	.g-lg-30 {
+		--bs-gutter-x: 30px;
+		--bs-gutter-y: 30px;
+	}
 }

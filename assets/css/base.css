@@ -221,6 +221,14 @@ input[type='number'] {
 	padding: 48px 0;
 }
 
+.section-gap_sm {
+	padding: 32px 0;
+}
+
+.section-gap_xs {
+	padding: 24px 0;
+}
+
 @media screen and (max-width: 991px) {
 	.section-gap {
 		padding: 32px 0;

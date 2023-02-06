@@ -65,7 +65,6 @@ textarea:focus {
 }
 
 .background-cover {
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -113,6 +112,7 @@ textarea:focus {
 	--line-height: inherit;
 	--line: 2;
 	overflow: hidden;
+	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 	display: -webkit-box;
 	-webkit-line-clamp: var(--line);
@@ -164,16 +164,25 @@ input[type='number'] {
 	color: var(--bs-white);
 	text-align: center;
 	min-height: 44px;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	white-space: nowrap;
 	line-height: 1;
 	padding: 12px 66px;
 	cursor: pointer;
 	border: 0;
+	-webkit-box-shadow: 0 1px 8px rgb(0 0 0 / 16%) !important;
 	box-shadow: 0 1px 8px rgb(0 0 0 / 16%) !important;
 	border-radius: 4px;
+	-webkit-transition: var(--transition-default);
+	-o-transition: var(--transition-default);
 	transition: var(--transition-default);
 	font-size: 1.1em;
 	font-weight: 600;
@@ -241,6 +250,7 @@ input[type='number'] {
 }
 
 .ratio > img {
+	-o-object-fit: cover;
 	object-fit: cover;
 }
 

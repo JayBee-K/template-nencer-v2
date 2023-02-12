@@ -3514,10 +3514,8 @@
 }
 
 .module-card .card-body .card-price {
-    line-height: 30px;
     font-size: 1.1em;
-    color: #d22323;
-    font-weight: bold;
+    color: #ff2727;
     margin-top: 10px;
 }
 
@@ -3599,4 +3597,14 @@
 
 .module-card:hover .card-link-animation span:last-child {
     margin-left: 15px;
+}
+
+@media screen and (max-width: 991px) {
+    .module-card .card-body .card-title {
+        font-size: 1.05em;
+    }
+
+    .module-card .card-body .card-price {
+        font-size: 1em;
+    }
 }

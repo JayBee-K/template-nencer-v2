@@ -25,9 +25,8 @@
 					});
 					$(this).attr({
 						"id": "subMenu_" + index,
-						"class": "collapse list-unstyled mb-0 header-navigation_sub--list",
 						"data-bs-parent": "#hasMenu"
-					});
+					}).addClass('collapse list-unstyled mb-0');
 				});
 			}
 

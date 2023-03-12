@@ -9,9 +9,6 @@
 			const scrollValue = $(window).scrollTop();
 			if (scrollValue > headerPosition) {
 				header.addClass('is-sticky');
-				if ($('#tab-sticky').length) {
-					$('#tab-sticky').css('top', header.height() + 10);
-				}
 			} else {
 				header.removeClass('is-sticky');
 			}

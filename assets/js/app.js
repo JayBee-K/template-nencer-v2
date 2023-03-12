@@ -204,6 +204,22 @@
 		});
 	}
 
+	const handleSidebarMobile = () => {
+		if (windowWidth < 1199) {
+			$('#call-sidebar').click(function () {
+				if (!$('body').hasClass('is-sidebar')) {
+					$('body').addClass('is-sidebar');
+				} else {
+					$('body').removeClass('is-sidebar');
+				}
+			});
+
+			$('#header-overlay').click(function () {
+				$('body').removeClass('is-navigation is-sidebar');
+			});
+		}
+	}
+
 	$(function () {
 		handleStickyHeader();
 		handleNavigationMobile();
@@ -219,5 +235,6 @@
 		handleViewPass();
 		handleCopyValue();
 		handleSortTable();
+		handleSidebarMobile();
 	});
 })(jQuery);

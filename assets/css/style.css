@@ -1006,7 +1006,6 @@
 }
 
 .footer {
-    background: #f8f9fa;
     padding-top: 50px;
 }
 
@@ -2225,50 +2224,14 @@
     .cloud-inner_card .card-body .card-description {
         font-size: 1em;
     }
-
 }
 
 .cloud-inner .section-tabs {
     margin-top: 30px;
 }
 
-.section-tabs .nav-tabs {
-    border-bottom: 2px solid #dddddd;
-}
-
-.section-tabs .nav-tabs .nav-item {
-    margin-right: 32px;
-    margin-bottom: -2px;
-}
-
-.section-tabs .nav-tabs .nav-item .nav-link {
-    font-size: 1.1em;
-    color: var(--bs-gray-900);
-    border: 0;
-    border-bottom: 2px solid transparent;
-    margin-bottom: 0;
-    background: transparent;
-    border-radius: 0;
-    padding: 0 0 5px;
-    -webkit-transition: unset;
-    -o-transition: unset;
-    transition: unset;
-}
-
-.section-tabs .nav-tabs .nav-item .nav-link.active {
-    border-bottom: 2px solid var(--secondary-color);
-    color: var(--primary-color);
-    font-weight: 700;
-}
-
-.section-tabs .tab-content {
-    margin-top: 30px
-}
-
 .price-card {
     background: var(--bs-white);
-    -webkit-box-shadow: 0 0 4px #e6e6e6;
-    box-shadow: 0 0 4px #e6e6e6;
     border-radius: 4px;
     height: 100%;
     -webkit-transition: var(--transition-default);
@@ -2278,6 +2241,7 @@
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
     transform: translate(0);
+    border: 1px solid #cecece !important;
 }
 
 .price-card .card-body {
@@ -3352,8 +3316,7 @@
 .section-form {
     background-size: cover;
     position: relative;
-    padding: 30px 0;
-    background: #f5f5f5;
+    padding: 0 0 30px;
 }
 
 .section-form .section-heading {
@@ -4307,6 +4270,40 @@
     padding-left: 30px;
 }
 
+.table-theme .table-theme_sort {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    font-weight: bold;
+    transition: none;
+    width: 100%;
+}
+
+.table-theme .table-theme_sort .table-theme_sort--icon {
+    display: none;
+}
+
+.table-theme .table-theme_sort.active {
+    color: var(--primary-color);
+}
+
+.table-theme .table-theme_sort.active .table-theme_sort--icon {
+    display: block;
+}
+
+.table-theme .table-theme_sort[data-sort=down],
+.table-theme .table-theme_sort[data-sort=up] {
+    display: flex;
+}
+
+.table-theme .table-theme_sort[data-sort=up] .table-theme_sort--icon:before {
+    content: "\f885";
+}
+
 .table-theme tr th,
 .table-theme tr td {
     border-width: 0;
@@ -4325,19 +4322,23 @@
 
 .table-theme tr th {
     background-color: #f8f8f8;
-    padding: 15px;
+    padding: 15px 15px;
     font-size: 1em;
     white-space: nowrap;
 }
 
+.table-theme tr td {
+    padding: 15px 15px;
+}
+
 .table-theme .table-theme_flex {
     display: flex;
-    gap: 8px;
+    gap: 12px;
     align-items: center;
 }
 
 .table-theme .table-theme_flex .table-theme_image {
-    width: 70px;
+    width: 60px;
     flex-shrink: 0;
 }
 
@@ -4404,6 +4405,49 @@
     color: var(--bs-white);
 }
 
+.table-theme .table-theme_price {
+    font-weight: 500;
+    color: #ff2727;
+}
+
+.table-theme .table-theme_status {
+    --color: #3d3d3d;
+    position: relative;
+    color: var(--color);
+    font-size: .95em;
+    font-weight: 500;
+    padding-left: 13px;
+    letter-spacing: .3px;
+}
+
+.table-theme .table-theme_status:before {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--color);
+    content: "";
+    display: block;
+}
+
+.table-theme .table-theme_status.table-theme_status--primary {
+    --color: var(--primary-color);
+}
+
+.table-theme .table-theme_status.table-theme_status--success {
+    --color: #198754;
+}
+
+.table-theme .table-theme_status.table-theme_status--danger {
+    --color: #dc3545;
+}
+
+.table-theme .table-theme_status.table-theme_status--warning {
+    --color: #ffc107;
+}
+
 .table-theme .table-theme_buttons {
     display: flex;
     align-items: center;
@@ -4445,4 +4489,87 @@
     background-color: #ffc107;
     color: var(--bs-white);
     border-color: #ffc107;
+}
+
+.table-theme .table-theme_switch {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 55px;
+    height: 22px;
+    overflow: hidden;
+}
+
+.table-theme .table-theme_switch .table-theme_switch--input {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.table-theme .table-theme_switch .table-theme_switch--text {
+    background-color: #e0e0e0;
+    position: relative;
+    display: block;
+    height: 100%;
+    transition: var(--transition-default);
+}
+
+.table-theme .table-theme_switch .table-theme_switch--text:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    content: attr(data-off);
+    font-size: .9em;
+    color: var(--bs-gray-900);
+    transition: var(--transition-default);
+}
+
+.table-theme .table-theme_switch .table-theme_switch--text:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    content: attr(data-on);
+    font-size: .8em;
+    color: var(--bs-white);
+    opacity: 0;
+    transition: var(--transition-default);
+}
+
+.table-theme .table-theme_switch .table-theme_switch--handle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    transition: var(--transition-default);
+}
+
+.table-theme .table-theme_switch .table-theme_switch--input:checked ~ .table-theme_switch--text {
+    background-color: var(--primary-color);
+}
+
+.table-theme .table-theme_switch .table-theme_switch--input:checked ~ .table-theme_switch--text:before {
+    opacity: 0;
+}
+
+.table-theme .table-theme_switch .table-theme_switch--input:checked ~ .table-theme_switch--text:after {
+    opacity: 1;
+}
+
+.table-theme .table-theme_switch .table-theme_switch--input:checked ~ .table-theme_switch--handle {
+    left: 35px;
+}
+
+.service-tables + .service-tables {
+    margin-top: 30px;
 }

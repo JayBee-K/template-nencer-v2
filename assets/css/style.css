@@ -2749,7 +2749,25 @@
 	-ms-flex-direction: column;
 	flex-direction: column;
 	gap: 10px;
-	padding-left: 16px;
+	padding-left: 0;
+	list-style: none;
+}
+
+.software-price_card .card-body .card-list ul li {
+	position: relative;
+	padding-left: 20px;
+}
+
+.software-price_card .card-body .card-list ul li:before {
+	position: absolute;
+	content: "\f058";
+	font-family: "Font Awesome 5 Pro";
+	color: #12bd12;
+	font-size: 15px;
+	left: 0;
+	top: 0;
+	display: block;
+	font-weight: 900;
 }
 
 .software-price_card .card-body .card-price {
@@ -3473,7 +3491,7 @@
 .section-form {
 	background-size: cover;
 	position: relative;
-	padding: 0 0 30px;
+	padding-bottom: 30px;
 }
 
 .section-form .section-heading {

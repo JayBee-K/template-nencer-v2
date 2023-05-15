@@ -84,18 +84,22 @@
 }
 
 .section-heading .section-heading_decor {
-	-moz-border-radius-bottomleft: 4px;
-	-webkit-border-bottom-left-radius: 4px;
 	border-bottom-left-radius: 4px;
-	-moz-border-radius-topleft: 4px;
-	-webkit-border-top-left-radius: 4px;
 	border-top-left-radius: 4px;
 	background-color: var(--primary-color);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 0 30px;
 	height: 46px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
 	width: max-content;
 	position: relative;
 	font-size: 1.3em;
@@ -271,8 +275,12 @@
 .header .header-language {
 	margin-left: 32px;
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 4px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -791,6 +799,7 @@
 	}
 
 	.header .header-grid {
+		-ms-flex-wrap: nowrap;
 		flex-wrap: nowrap;
 	}
 
@@ -1432,7 +1441,6 @@
 	.section-hero .hero-item .hero-item_image {
 		margin-top: 32px;
 	}
-
 }
 
 .software-card {
@@ -1450,7 +1458,6 @@
 }
 
 .software-card .card-header {
-	/*background-color: var(--primary-color) !important;*/
 	background-color: #cecece !important;
 	border-bottom: 1px solid var(--bs-gray-200) !important;
 }
@@ -1462,19 +1469,6 @@
 	position: relative;
 	--bs-aspect-ratio: 150px;
 }
-
-/*.software-card .card-header .card-image:after {*/
-/*    position: absolute;*/
-/*    background-color: var(--bs-white);*/
-/*    left: -50px;*/
-/*    bottom: -50px;*/
-/*	border-radius: 50%;*/
-/*	height: 130px;*/
-/*	width: 130px;*/
-/*    display: block;*/
-/*    content: "";*/
-/*    opacity: .2;*/
-/*}*/
 
 .software-card .card-header .card-image img {
 	-webkit-transform: translateZ(0);
@@ -3213,7 +3207,12 @@
 
 	.table-card_domain .card-body .card-body_table .card-body_table--colTwo,
 	.table-card_domain .card-body .card-body_table .card-body_table--colThree {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 
@@ -3340,18 +3339,22 @@
 }
 
 .sidebar .sidebar-item .sidebar-title {
-	-moz-border-radius-bottomleft: 4px;
-	-webkit-border-bottom-left-radius: 4px;
 	border-bottom-left-radius: 4px;
-	-moz-border-radius-topleft: 4px;
-	-webkit-border-top-left-radius: 4px;
 	border-top-left-radius: 4px;
 	background-color: var(--primary-color);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 0 15px;
 	height: 38px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
 	width: max-content;
 	position: relative;
 	font-size: 1.3em;
@@ -3424,11 +3427,15 @@
 }
 
 .sidebar .sidebar-item .sidebar-list .software-card {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
 }
 
 .sidebar .sidebar-item .sidebar-list .software-card .card-header {
 	width: 35%;
+	-ms-flex-negative: 0;
 	flex-shrink: 0;
 	border-bottom: 0 !important;
 	border-right: 1px solid var(--bs-gray-200) !important;
@@ -3447,8 +3454,13 @@
 }
 
 .sidebar .sidebar-item .sidebar-list .software-card .card-body .card-price {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	gap: 0;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
 	align-items: flex-start;
 }
 
@@ -3573,7 +3585,6 @@
 	font-size: 16px;
 }
 
-
 @media screen and (max-width: 991px) {
 	.article-detail .article-detail_title {
 		text-align: center;
@@ -3617,7 +3628,6 @@
 	.product-detail .product-detail_content h6 * {
 		font-size: 14px;
 	}
-
 }
 
 .section-form {
@@ -4295,7 +4305,6 @@
 	}
 }
 
-
 .partner-item {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -4365,7 +4374,6 @@
 	-o-transition: var(--transition-default);
 	transition: var(--transition-default);
 }
-
 
 .blog-card .card-body .card-type:hover {
 	background: var(--bs-white);
@@ -5355,7 +5363,7 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
 	background: -o-linear-gradient(top, white, black);
+	background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
 	background: linear-gradient(to bottom, white, black);
 }
